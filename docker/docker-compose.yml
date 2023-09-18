@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  postgres:
+    container_name: "postres-polygon31"
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_DB: "polygon31"
+      POSTGRES_USER: "admin"
+      POSTGRES_PASSWORD: "admin"
+    ports:
+      - "5532:5432"
